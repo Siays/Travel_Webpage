@@ -5,7 +5,7 @@ All of the images / video are strictly copyrighted and are used for the educatio
 
 If you are the author or the owner of any of the resources found within the project, please contact me personally. 
 ----------------------------------------------------------------------------------------------------------
-This assignment is a group work, the part I incharge are
+This assignment is a group work, the parts I incharged are
 1. Travel package (Exploration to Egypt Hisotry)
 2. Travel package (Luxury Egypt Trip)
 3. Review
