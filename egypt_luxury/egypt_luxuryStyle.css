@@ -1,0 +1,107 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Bebas Neue Regular";
+    src: url(fonts/BebasNeue-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Apple TEA";
+    src: url(fonts/AppleTea-jELql.otf);
+    src: url(fonts/AppleTea-z8R1a.ttf);
+}
+
+@font-face {
+    font-family: "Montsserat";
+    src: url(../Montserrat-Regular.ttf);
+}
+
+div.YS-headerText {
+    font-family: "Bebas Neue Regular";
+    color: white;
+    font-size: 3em;
+}
+
+p.YS-videoText {
+    color: white;
+    font-family: "Bebas Neue Regular";
+    font-size: 3em;
+}
+
+p.YS-shortparagraph {
+    font-size: 1em;
+    font-family: 'Bebas Neue Regular';
+}
+
+p.YS-price {
+    font-family: "Bebas Neue Regular";
+    font-size: 1.5em;
+}
+
+span.YS-myr {
+    color: orange;
+    font-size: 1.5em;
+}
+
+span.YS-figure {
+    color: orange;
+    font-size: 2em;
+}
+
+p.YS-pdestination {
+    font-family: "Bebas Neue Regular";
+    font-size: 2em;
+}
+
+p.YS-destination {
+    font-family: "Bebas Neue Regular";
+    font-size: 1.3em;
+    color: rgb(33, 120, 235)
+}
+
+p.YS-pdficon {
+    font-family: "Bebas Neue Regular";
+    font-size: 1.5em;
+}
+
+p.YS-shakehandicon {
+    font-family: "Bebas Neue Regular";
+    font-size: 1.5em;
+}
+
+p.YS-touricon {
+    font-family: "Bebas Neue Regular";
+    font-size: 1.5em;
+}
+
+div.YS-pricing a:hover {
+    color: gray;
+}
+
+p.YS-disclaimer {
+    font-family: "Bebas Neue Regular";
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(226, 35, 35);
+}
+
+p.YS-beforeTimeline {
+    font-family: "Bebas Neue Regular";
+    font-size: 2em;
+}
+
+h2.YS-timelineH2 {
+    font-size: 1.5em;
+    font-family: "Bebas Neue Regular";
+    color: orange;
+}
+
+p.YS-journeyDestination {
+    font-size: 1.2em;
+    font-family: "Bebas Neue Regular";
+    color: rgb(33, 120, 235);
+}
+
+span.YS-behindIcon {
+    font-family: "Bebas Neue Regular";
+    font-size: 1.5em;
+}

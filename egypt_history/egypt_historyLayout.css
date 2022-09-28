@@ -1,0 +1,406 @@
+@charset "utf-8";
+div.topnav-container {
+    font-family: "Montserrat", sans-serif, Arial, sans-serif;
+}
+
+div.YS-header {
+    position: relative;
+}
+
+div.YS-header>img {
+    width: 100%;
+    height: 400px;
+}
+
+div.YS-headerText {
+    position: absolute;
+    bottom: 5px;
+    left: 50px;
+}
+
+div.YS-videoPart {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+div.YS-videoBackground {
+    background-image: url("pictures/4.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p.YS-videoText {
+    position: absolute;
+    bottom: 540px;
+    left: 50px;
+}
+
+video.YS-video {
+    position: absolute;
+    bottom: 8%;
+    left: 25%;
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+div.YS-LeftRight {
+    width: 100%;
+}
+
+div.YS-pictureContainer {
+    position: relative;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 45%;
+}
+
+div.YS-mySlides img {
+    height: 400px;
+    ;
+    width: 100%;
+}
+
+div.YS-slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+div.YS-pricing {
+    float: left;
+    width: 45%;
+    height: 480px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 8px solid transparent;
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px 4px rgb(0 0 0 / 15%);
+}
+
+div.YS-PricingContent {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+/* Next & previous buttons */
+
+.YS-prev,
+.YS-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.YS-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.YS-prev:hover,
+.YS-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+
+.YS-dot {
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.YS-active,
+.YS-dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.YS-fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*end of picture container*/
+
+div.YS-HRline {
+    clear: both;
+    width: 90%;
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 90px;
+    border-radius: 0.1px;
+    box-shadow: 4px 4px 12px 4px rgb(0 0 0 / 15%);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.YS-timeline {
+    width: 95%;
+    position: relative;
+    height: 100%;
+    margin: auto;
+    border: 8px solid transparent;
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px 4px rgb(0 0 0 / 15%);
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.YS-timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 35px;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+/* Container around content */
+
+.YS-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+/* The circles on the timeline */
+
+.YS-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 15px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* Place the container to the right */
+
+.YS-right {
+    left: 50%;
+}
+
+
+/* Fix the circle for containers on the right side */
+
+.YS-right::after {
+    left: -16px;
+}
+
+
+/* The actual content */
+
+.YS-content {
+    padding: 20px 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.YS-timeline::after {
+    left: 30px;
+}
+
+
+/* Full-width containers */
+
+.YS-container {
+    width: 90%;
+    padding-left: 70px;
+    padding-right: 25px;
+}
+
+
+/* Make sure all circles are at the same spot */
+
+.YS-left::after,
+.YS-right::after {
+    left: 15px;
+}
+
+
+/* Make all right containers behave like the left ones */
+
+.YS-right {
+    left: 0%;
+}
+
+span.YS-behindIcon {
+    position: relative;
+    bottom: 2px;
+    left: 3px;
+    letter-spacing: 1px;
+}
+
+div.foot {
+    font-family: "Montserrat", sans-serif, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 1160px) {
+    body {
+        max-width: 100%;
+    }
+    video.YS-video {
+        bottom: 15%;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+    }
+    div.YS-pictureContainer {
+        float: none;
+        margin-left: 10%;
+        width: 80%;
+    }
+    div.YS-pricing {
+        height: auto;
+        float: none;
+        width: 90%;
+        margin-left: 25px;
+    }
+    div.YS-HRline {
+        left: 50px;
+    }
+    div.YS-container {
+        height: auto;
+        padding: 10px 50px;
+        width: 70%;
+    }
+    .YS-timeline {
+        height: auto;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    div.foot {
+        font-family: "Montserrat", sans-serif, Arial, sans-serif;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        max-width: 100%;
+    }
+    video.YS-video {
+        bottom: 15%;
+        left: 10%;
+        width: 80%;
+        height: 70%;
+    }
+    div.YS-pictureContainer {
+        float: none;
+        margin-left: 30px;
+        width: 90%;
+    }
+    div.YS-pricing {
+        height: auto;
+        float: none;
+        width: 90%;
+        margin-left: 25px;
+    }
+    div.YS-HRline {
+        left: 25px;
+    }
+    div.YS-container {
+        height: auto;
+        padding: 10px 50px;
+        width: 70%;
+    }
+    .YS-timeline {
+        height: auto;
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    video.YS-video {
+        bottom: 35%;
+        left: 10%;
+        width: 80%;
+        height: 40%;
+    }
+    div.YS-pictureContainer {
+        margin-left: 15px;
+    }
+    div.YS-pricing {
+        height: auto;
+        float: none;
+        width: 90%;
+        margin-left: 10px;
+    }
+    div.YS-mySlides img {
+        height: 200px;
+        width: 100%;
+    }
+}
