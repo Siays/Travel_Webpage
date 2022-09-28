@@ -1,0 +1,109 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Apple TEA";
+    src: url(fonts/AppleTea-jELql.otf);
+    src: url(fonts/AppleTea-z8R1a.ttf);
+}
+
+@font-face {
+    font-family: "Montsserat";
+    src: url(../Montserrat-Regular.ttf);
+}
+
+body {
+    font-family: "Montserrat", sans-serif, Arial, sans-serif;
+}
+
+div.YS-headerText {
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFFFFF;
+    font-size: 4em;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+div.YS-previousCust h2 {
+    color: #8c8c8c;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.YS-animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.YS-animatedFadeInUp {
+    opacity: 0
+}
+
+.YS-fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+div.YS-flip-card-back>h1 {
+    font-size: 2em;
+}
+
+p.YS-package {
+    font-size: 1.5em;
+}
+
+div.YS-flip-card-back>p {
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+span.YS-rating {
+    color: Orange;
+}
+
+h2.YS-beforeForm {
+    font-size: 3em;
+    font-weight: bold;
+    color: #8c8c8c;
+}
+
+div.YS-form label {
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    div.YS-headerText {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    div.YS-headerText {
+        font-size: 3em;
+    }
+}

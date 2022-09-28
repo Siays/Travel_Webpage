@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Customer Review Page
+    Author: Sia Yeong Sheng
+    Date: 26/7/2021
+    Filename: review.html 
+  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customer Review</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="reviewLayout.css">
+    <link rel="stylesheet" href="reviewStyle.css">
+    <link rel="stylesheet" href="../nav_footer/nav_footer.css">
+    <link rel="stylesheet" href="../popchat/popchat.css">
+    <link rel="icon" href="pictures/titleLogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!---Navigation bar-->
+    <div class="topnav-container">
+        <div class="topnav-content">
+            <div id="logo1">
+                <a href="../home.html"><img src="../nav_footer/pictures/logo.png"></a>
+            </div>
+            <div class="topnav" id="myTopnav">
+                <a href="../home.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Travel package
+          </button>
+                    <div class="dropdown-content">
+                        <a href="../travel_packages/egypt_history/egypt_history.html">Exploration to Egypt History - Egypt</a>
+                        <a href="../travel_packages/egypt_luxury/egypt_luxury.html">Luxury Egypt Trip - Egypt</a>
+                        <a href="../travel_packages/maldives/maldives.html">Sweet Maldives Trip - Maldives</a>
+                        <a href="../travel_packages/langkawi/langkawi.html">Perfect Trip To Langkawi - Langkawi</a>
+                        <a href="../travel_packages/kinabalu/kinabalu.html">Mountain Climbing - Kota Kinabalu</a>
+                        <a href="../travel_packages/himalaya/himalaya.html">Mountain Climbing - Himalaya</a>
+                        <a href="../travel_packages/us_drive/us_drive.html">USA Rural and Urban - USA</a>
+                        <a href="../travel_packages/uk_drive/uk_drive.html">Great Britain Drive - UK</a>
+                        <a href="../travel_packages/winter_sport/winter_sport.html">Winter Sport - St. Moritz, Switzerland</a>
+                        <a href="../travel_packages/water_sport/water_sport.html">Water Sport - Jaws, Hawaii, USA</a>
+
+                    </div>
+                </div>
+                <a href="../voucher/voucher.html">Voucher</a>
+                <a href="./review.html">Review</a>
+
+                <a href="../faq/faq.html">FAQ</a>
+                <a href="../tnc/tnc.html">Term & condition</a>
+                <a href="../about_us/about_us.html">About Us</a>
+                <hr>
+                <div class="login">
+                    <a href="../register/register.html">Register</a>
+                    <a href="../login/login.html">Login</a>
+                </div>
+                <a href="javascript:void(0);" style="font-size:10px;" class="icon" onclick="topnav()">&#9776;</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="YS-header">
+        <div class="YS-headerText YS-animated YS-animatedFadeInUp YS-fadeInUp"> LET US KNOW WHAT YOU THINK</div>
+    </div>
+
+    <div class="YS-previousCust">
+        <div class="YS-animated YS-animatedFadeInUp YS-fadeInUp">
+            <h2>PREVIOUS CUSTOMER REVIEW</h2>
+            <div class="YS-reviewFirstRow">
+                <div class="YS-reviewR1C1">
+                    <div class="YS-flip-card">
+                        <div class="YS-flip-card-inner">
+                            <div class="YS-flip-card-front">
+                                <img src="pictures/custReview1.jpg" alt="cust" style="width:300px;height:300px;">
+                            </div>
+                            <div class="YS-flip-card-back">
+                                <h1>Numa</h1>
+                                <p class="YS-package">Luxury Egpty Trip</p>
+                                <p>Rating: <span class="YS-rating">★★★★★</span></p>
+                                <p>Thank you Doge69 Travel Enterprise for giving us such a memorable journey. Everything is just excellence and far beyond my expectation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="YS-reviewR1C2">
+                    <div class="YS-flip-card">
+                        <div class="YS-flip-card-inner">
+                            <div class="YS-flip-card-front">
+                                <img src="pictures/custReview2(JM).png" alt="cust" style="width:300px;height:300px;">
+                            </div>
+                            <div class="YS-flip-card-back">
+                                <h1>Palla</h1>
+                                <p class="YS-package">USA Rural and Urban</p>
+                                <p>Rating: <span class="YS-rating">★★★★★</span></p>
+                                <p>Never have I seen better. Gonna definitely do this again. Give a thumbs up to them for all their work! You should definitely check out the USA packages!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="YS-reviewR1C3">
+                    <div class="YS-flip-card">
+                        <div class="YS-flip-card-inner">
+                            <div class="YS-flip-card-front">
+                                <img src="pictures/custReview3(JJ).png" alt="cust" style="width:300px;height:300px;">
+                            </div>
+                            <div class="YS-flip-card-back">
+                                <h1>Egod</h1>
+                                <p class="YS-package">Sweet Maldives Trip</p>
+                                <p>Rating: <span class="YS-rating">★★★★★</span></p>
+                                <p>Thank you Doge69 Travel Enterprise for giving us such a memorable journey. Everything is just excellence and far beyond my expectation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="YS-beforeForm">Your review is valuable!</h2>
+        <div class="YS-form">
+            <form id="YS-review" action="#" method="post" enctype="application/x-www-form-urlencoded">
+                <fieldset id="YS-custInfo">
+                    <div class="YS-row">
+                        <label for="YS-name">Name </label>
+                        <input name="YS-custName" id="YS-name" type="text" required />
+                    </div>
+
+                    <div class="YS-row">
+                        <label for="YS-contactNo">Phone No</label>
+                        <input name="YS-custcontact" id="YS-contact" type="digit" required />
+                    </div>
+
+                    <div class="YS-row">
+                        <label for="YS-email">E-mail</label>
+                        <input name="YS-custemail" id="YS-email" type="email" required />
+                    </div>
+
+                    <div class="YS-row">
+                        <label for="YS-referNo">Receipt reference code</label>
+                        <input name="YS-custreferNo" id="YS-referNo" type="text" placeholder="REF1234567890" pattern="REF+[0-9]{10}" required />
+                    </div>
+                </fieldset>
+
+                <fieldset id="Ys-custRating">
+                    <!--Package selection-->
+                    <div class="YS-row">
+                        <label for="YS-formPackage">Review package</label>
+                        <select name="YS-formPackage" id="YS-formPackage" required>
+              <option value="">None</option>
+              <option value="YS-Package1">Luxury Trip to Egpty</option>
+              <option value="YS-Package2">Exploration to Egpty history</option>
+              <option value="JJ-Package3">Sweet Maldives Trip</option>
+              <option value="JJ-Package4">Perfect Trip To Langkawi</option>
+              <option value="JM-Package5">USA Rural and Urban</option>
+              <option value="JM-Package6">Great Britain Drive</option>
+              <option value="LC-Package7">Ordinary mountain climbing(Kota Kinabalu)</option>
+              <option value="LC-Package8">Ordinary mountain climbing(Himalayas)</option>
+              <option value="CL-Package9">Winter sport - ST.Moritz, Switzerland</option>
+              <option value="CL-Package10">Water sport - Jaws, Hawaii, USA </option>
+            </select>
+                    </div>
+                    <!--Star rating-->
+                    <div class="YS-row">
+                        <label class="YS-ratingLabel">Your rating:</label>
+                        <div class="YS-rate">
+                            <input type="radio" id="YS-star5" name="YS-rate" value="5" />
+                            <label for="YS-star5" title="text">5 stars</label>
+                            <input type="radio" id="YS-star4" name="YS-rate" value="4" />
+                            <label for="YS-star4" title="text">4 stars</label>
+                            <input type="radio" id="YS-star3" name="YS-rate" value="3" />
+                            <label for="YS-star3" title="text">3 stars</label>
+                            <input type="radio" id="YS-star2" name="YS-rate" value="2" />
+                            <label for="YS-star2" title="text">2 stars</label>
+                            <input type="radio" id="YS-star1" name="YS-rate" value="1" required />
+                            <label for="YS-star1" title="text">1 star</label>
+                        </div>
+                    </div>
+                    <!--Text box-->
+                    <div class="YS-row">
+                        <label for="YS-commBox">How was your trip</label>
+                        <br />
+                        <textarea name="YS-custExp" id="YS-commBox" placeholder="Tell us your experience here" required /></textarea>
+                    </div>
+                    <!--button-->
+                    <div class="YS-row">
+                        <div id="YS-buttons">
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Reset" />
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!-- pop chat-->
+    <button class="lc-open-button" onclick="openForm()">Chat</button>
+    <div class="lc-chat-popup" id="myForm">
+        <form action="#" class="lc-form-container">
+            <img src="../popchat/pictures/logo.png" id="logo2">
+            <h1>Chat</h1>
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+            <button type="submit" class="lc-btn">Send</button>
+            <button type="button" class="lc-btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- pop chat-->
+
+
+
+    <footer>
+        <div class="foot">
+            <div class="footer">
+                <div class="footer-1-1">
+                    <h2>DOGE 69</h2>
+                    <h3>TRAVEL ENTERPRISE</h3>
+                    <p>
+                        Our expert tour consultants are available 24/7 to assist your travel plan.
+                    </p>
+                    <svg class="facebook" viewBox="0 0 32 32" width="32px" height="32px">
+            <g id="surface69583903">
+              <path class="facebook"
+                d="M 7 5 C 5.90625 5 5 5.90625 5 7 L 5 25 C 5 26.09375 5.90625 27 7 27 L 25 27 C 26.09375 27 27 26.09375 27 25 L 27 7 C 27 5.90625 26.09375 5 25 5 Z M 7 7 L 25 7 L 25 25 L 19.8125 25 L 19.8125 18.25 L 22.40625 18.25 L 22.78125 15.25 L 19.8125 15.25 L 19.8125 13.3125 C 19.8125 12.4375 20.027344 11.84375 21.28125 11.84375 L 22.90625 11.84375 L 22.90625 9.125 C 22.628906 9.089844 21.667969 9.03125 20.5625 9.03125 C 18.257812 9.03125 16.6875 10.417969 16.6875 13 L 16.6875 15.25 L 14.0625 15.25 L 14.0625 18.25 L 16.6875 18.25 L 16.6875 25 L 7 25 Z M 7 7 " />
+            </g>
+          </svg>
+
+                    <svg class="instagram" viewBox="0 0 32 32" width="32px" height="32px">
+            <g id="surface70790940">
+              <path
+                d="M 11.46875 5 C 7.917969 5 5 7.914062 5 11.46875 L 5 20.53125 C 5 24.082031 7.914062 27 11.46875 27 L 20.53125 27 C 24.082031 27 27 24.085938 27 20.53125 L 27 11.46875 C 27 7.917969 24.085938 5 20.53125 5 Z M 11.46875 7 L 20.53125 7 C 23.003906 7 25 8.996094 25 11.46875 L 25 20.53125 C 25 23.003906 23.003906 25 20.53125 25 L 11.46875 25 C 8.996094 25 7 23.003906 7 20.53125 L 7 11.46875 C 7 8.996094 8.996094 7 11.46875 7 Z M 21.90625 9.1875 C 21.402344 9.1875 21 9.589844 21 10.09375 C 21 10.597656 21.402344 11 21.90625 11 C 22.410156 11 22.8125 10.597656 22.8125 10.09375 C 22.8125 9.589844 22.410156 9.1875 21.90625 9.1875 Z M 16 10 C 12.699219 10 10 12.699219 10 16 C 10 19.300781 12.699219 22 16 22 C 19.300781 22 22 19.300781 22 16 C 22 12.699219 19.300781 10 16 10 Z M 16 12 C 18.222656 12 20 13.777344 20 16 C 20 18.222656 18.222656 20 16 20 C 13.777344 20 12 18.222656 12 16 C 12 13.777344 13.777344 12 16 12 Z M 16 12 " />
+            </g>
+          </svg>
+
+                    <svg class="whatsapp" viewBox="0 0 32 32" width="32px" height="32px">
+            <g id="surface73123164">
+              <path
+                d="M 16.039062 6.695312 C 10.898438 6.695312 6.714844 10.875 6.714844 16.011719 C 6.714844 17.65625 7.144531 19.257812 7.960938 20.671875 L 6.695312 25.359375 L 11.578125 24.207031 C 12.941406 24.949219 14.472656 25.339844 16.035156 25.339844 C 21.175781 25.339844 25.355469 21.160156 25.359375 16.023438 C 25.359375 13.53125 24.390625 11.1875 22.632812 9.425781 C 20.871094 7.664062 18.53125 6.695312 16.039062 6.695312 Z M 16.035156 8.5625 C 18.03125 8.5625 19.902344 9.339844 21.3125 10.746094 C 22.722656 12.15625 23.496094 14.027344 23.492188 16.019531 C 23.492188 20.132812 20.148438 23.472656 16.035156 23.472656 C 14.792969 23.472656 13.558594 23.160156 12.472656 22.570312 L 11.84375 22.226562 L 11.148438 22.390625 L 9.3125 22.824219 L 9.761719 21.15625 L 9.964844 20.410156 L 9.578125 19.738281 C 8.925781 18.613281 8.582031 17.324219 8.582031 16.011719 C 8.582031 11.90625 11.925781 8.5625 16.035156 8.5625 Z M 12.738281 11.710938 C 12.582031 11.710938 12.332031 11.769531 12.117188 12.003906 C 11.902344 12.234375 11.300781 12.796875 11.300781 13.945312 C 11.300781 15.089844 12.136719 16.199219 12.253906 16.355469 C 12.367188 16.507812 13.863281 18.933594 16.230469 19.867188 C 18.199219 20.644531 18.597656 20.492188 19.027344 20.453125 C 19.453125 20.414062 20.40625 19.890625 20.601562 19.34375 C 20.792969 18.800781 20.792969 18.332031 20.738281 18.238281 C 20.679688 18.140625 20.523438 18.082031 20.289062 17.964844 C 20.058594 17.847656 18.914062 17.285156 18.699219 17.210938 C 18.484375 17.132812 18.328125 17.09375 18.171875 17.324219 C 18.019531 17.558594 17.574219 18.082031 17.4375 18.238281 C 17.300781 18.394531 17.164062 18.414062 16.933594 18.296875 C 16.699219 18.179688 15.949219 17.933594 15.058594 17.140625 C 14.367188 16.523438 13.898438 15.761719 13.761719 15.527344 C 13.625 15.296875 13.75 15.167969 13.867188 15.050781 C 13.96875 14.949219 14.097656 14.78125 14.214844 14.644531 C 14.328125 14.507812 14.371094 14.410156 14.449219 14.257812 C 14.523438 14.101562 14.484375 13.964844 14.425781 13.847656 C 14.371094 13.730469 13.917969 12.582031 13.710938 12.121094 C 13.535156 11.730469 13.351562 11.722656 13.183594 11.714844 C 13.046875 11.710938 12.894531 11.710938 12.738281 11.710938 Z M 12.738281 11.710938 " />
+            </g>
+          </svg>
+                </div>
+                <div class="footer-1-2">
+                    <h2>TRAVEL SPOT</h2>
+                    <div class="footer-1-2-1">
+                        <img src="../nav_footer/pictures/maldives.jpg" class="maldives-1">
+                        <span class="spot">Maldives</span><br/>
+                        <span class="price">FROM RM3475/PAX</span>
+                    </div>
+                    <div class="footer-1-2-2">
+                        <img src="../nav_footer/pictures/england.jpg" class="england-1">
+                        <span class="spot">England</span><br/>
+                        <span class="price">FROM RM16969/PAX</span>
+                    </div>
+                </div>
+                <div class="footer-1-3">
+                    <h2>
+                        CONTACT INFO
+                    </h2>
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            Concourse Level, Petronas Twin Tower, Lower Ground, Kuala Lumpur City Centre, 50088 Kuala Lumpur.
+                        </li>
+                        <li>
+                            +603 9696 6969
+                        </li>
+                        <li>
+                            doge69travel@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="review.js"></script>
+    <script src="../nav_footer/nav_footer.js"></script>
+    <script src="../popchat/popchat.js"></script>
+</body>
+
+</html>
